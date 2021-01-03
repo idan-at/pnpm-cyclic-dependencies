@@ -1,0 +1,12 @@
+importers:
+  packages/p1:
+    dependencies:
+      p2: 'link:../p2'
+    specifiers:
+      p2: 'workspace:^1.0.0'
+  packages/p2:
+    dependencies:
+      p1: 'link:../p1'
+    specifiers:
+      p1: 'workspace:^1.0.0'
+lockfileVersion: 5.2
